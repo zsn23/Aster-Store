@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+ 
+    <link href="../Styling//bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet" />
+    
+  <title>Checkout Form</title>
+  <style>
+   
+    .leftside , .rightside{
+      height: 100%;
+      width: 100%;
+    }
+    .leftside{
+      background: white;
+    }
+    .rightside{
+      background: #F5F5F5;
+      
+    }
+
+    @media (min-width:0px) {
+      .card{
+        padding: 50px !important;
+      }
+    }
+
+    @media (max-width:768px) {
+      .rightside{
+        height: auto;
+        }
+
+      .row_{
+        flex-direction: column-reverse !important;
+      }
+      .logo_icon {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+    margin-left: 0px !important;
+    margin-bottom: 10px !important;
+    column-gap: 0px !important;
+        }
+        .logo_icon img{
+          width: 25% !important;
+          height: auto !important;
+        }
+        .card{
+          width: 100% !important;
+        }
+
+    }
+
+    @media (min-width:767px) {
+      .card{
+        width: 40% !important;
+        position: fixed !important;
+      }
+    }
+
+    .complete-order-btn {
+            background-color: #9d75d3;
+            border: none;
+            color: white;
+            width: 100%;
+            height: 10vh;
+
+        }
+        .complete-order-btn:hover {
+            background-color:  #A753E8;
+            color: white;
+        }
+        
+        
+        .logo_icon {
+          display: flex !important;
+        align-items: center !important;
+        justify-content: space-between !important;
+        flex-wrap: nowrap !important;
+    margin-left: auto;
+    margin-bottom: 10px;
+    column-gap: 55px;
+        }
+        .Rupees{
+          font-size: 12px;
+    font-weight: 100;
+        }
+        .headings{
+          font-weight: 500;
+          font-size: 1.5rem;
+        }
+        .paragraphs{
+          font-size: small;
+          opacity: 0.7;
+        }
+        ::-webkit-input-placeholder{
+          font-size: 12px !important;
+        }
+        .radioButtons{
+          font-size: small;
+        }
+        .bank_deposit_radio{
+          font-size: small;
+        }
+         
+      .form-check-input:checked {
+        background-color: #020202 !important;
+        border-color: white !important;
+      }
+      .form-check-input:focus {
+    border-color: none !important;
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+.form-control:focus{
+  border-color: none !important;
+    outline: none !important;
+    box-shadow: none !important;
+    border: 2px solid black !important;
+}
+@media (max-width:436px) {
+  .InSmallscreen_payment__{
+    font-size: 11px  !important ;
+  }
+}
+
+  </style>
+</head>
+<body >
+
+    <!-- Left Side -->
+
+  <div class="row row_ g-0">
+
+    <div class="col-md-7  g-0">
+      
+      <div class="leftside ">
+
+        <div class="container " style="padding: 80px; padding-top: 15px !important; padding-right: 3rem !important;">
+          <div class=" mx-auto  ">
+              <h2 class="headings  ">Contact</h2>
+              <form>
+                  <div class="mb-1">
+                   
+                      <input type="email" id="email"  class="form-control" placeholder="Email" required />
+                  </div>
+                  <div class="mb-4 form-check">
+                    <input type="checkbox" class="form-check-input" id="news-offers">
+                    <label class="form-check-label radioButtons" for="news-offers">Email me with news and offers</label>
+                  </div>
+                  <h2 class="headings  ">Delivery</h2>
+                  <p class="paragraphs"> This will also be used as your billing address for this order.</p>
+                  <div class="mb-2">
+                   
+                      <select id="country" class="form-select">
+                        <option value = ""  class="d-none">Country/Region</option>
+                          <option value = "1">Pakistan</option>
+                      </select>
+                  </div>
+                  <div class="row mb-1">
+                      <div class="col-sm-6 mb-2">
+                         
+                          <input type="text" id="first-name" class="form-control" placeholder="First Name" required />
+                      </div>
+                      <div class="col-sm-6">
+                          <input type="text" id="last-name" class="form-control" placeholder="Last name" required />
+                      </div>
+                  </div>
+                  <div class="mb-2">
+                      <input type="text" id="address" class="form-control" placeholder="Address" required />
+                  </div>
+                  <div class="row mb-1">
+                      <div class="col-sm-6 mb-1">
+                          <input type="text" id="apartment" class="form-control" placeholder="Apartment, suite, etc. (optional)" />
+                      </div>
+                      <div class="col-sm-6">
+                          <input type="text" id="city" class="form-control" placeholder="City" required />
+                      </div>
+                  </div>
+                  <div class="row mb-0">
+                      <div class="col-sm-6 mb-3">
+                          <input type="text" id="postal-code" class="form-control" placeholder="Postal code (optional)" />
+                      </div>
+                      <div class="col-sm-6">
+                          <input type="tel" id="phone" class="form-control" placeholder="Phone" required />
+                      </div>
+                  </div>
+                  <div class="mb-4 form-check">
+                      <input type="checkbox" class="form-check-input " id="save-info">
+                      <label class="form-check-label radioButtons" for="save-info" id="save-info">Save this information for next time</label>
+                  </div>
+                  <h2 class="headings mb-2" style="font-size: medium !important;">Shipping method</h2>
+                  <div class="mb-4 d-flex justify-content-between align-items-center " style="font-size: 0.9rem; border: 1px solid black; border-radius: 5px; height: 50px; padding-left: 10px; padding-right: 10px; background: #F6F6F6;">
+                      <span class="text-muted">Standard</span>
+                      <span style="font-weight: 600;" >Rs 150.00</span>
+                  </div>
+                  <!-- Payment Section -->
+                  <h4 class="headings">Payment</h4>
+                  <p class="paragraphs mb-0">Your payment method’s billing address must match the shipping address. All transactions are secure and encrypted.</p>
+                  <p class="paragraphs">All transactions are secure and encrypted.</p>
+  <div class="mb-4 " >
+    
+    <div class="container border-top border-start border-end border-bottom  mt-4  p-0" id="CODMETHOD" >
+      <div class="border-top border-start border-end border-bottom  p-3" style="border: 1px solid black !important;  background: whitesmoke;" id="CodContainer">
+        <input class="form-check-input border-top border-bottom border-end border-start" type="radio" name="payment-method" id="cod" checked>
+        <label class="form-check-label radioButtons" for="cod" id="cod">Cash on Delivery (COD)</label>
+        
+      </div>
+        
+        <div id="COD" class="p-3" style="background: whitesmoke; height: 50px !important;">
+            <p class="text-center mb-0 InSmallscreen_payment__" style="font-size: small ; display: flex; flex-wrap: wrap; align-items: center; justify-content: center;">Payment will be collected at the time of delivery</p>
+        </div>
+    </div>
+
+    <div class="container border-top border-start border-end border-bottom  p-0" id="PAYMENTMETHOD">
+      <div class="border-top border-start border-end border-bottom  p-3" id="Bank_DepositContainer">
+        <input class="form-check-input " type="radio" name="payment-method" id="bank-deposit">
+        <label class="form-check-label radioButtons" for="bank-deposit" id="bank-deposit">Bank Deposit</label>
+        
+      </div>
+        
+        <div id="bank-details" class=" d-none p-3" style="background-color: whitesmoke !important;">
+            <p class="mb-0 bank_deposit_radio">Bank Name: Sadapay</p>
+            <p class="mb-0 bank_deposit_radio">Account Title: Faizan Azeem</p>
+            <p class="mb-0 bank_deposit_radio pb-2">Account Number: 03314001202</p>
+        </div>
+    </div>
+  </div>
+                 <!-- Billing Address Section -->
+                 <div class="mb-4 " id="billing_addressSection" style="display: none;">
+                  <h4 class="headings">Billing address</h4>
+                  <div id="shipping__address_" class="border-top border-start border-end border-bottom  container p-3" style="border: 1px solid black !important; background: whitesmoke !important;">
+                      <input class="form-check-input " type="radio" name="billing" id="same-address" checked>
+                      <label class="form-check-label radioButtons" for="same-address" id="same-address">Same as shipping address</label>
+                  </div>
+                  <div class="border-top border-start border-end border-bottom  container   p-3" id="different_billing_address">
+                      <input class="form-check-input " type="radio" name="billing" id="billing-different" >
+                      <label class="form-check-label radioButtons" for="billing-different" id="billing-different">Use a different billing address</label>  
+                  </div>
+                  <div id="billing-address" class="d-none border-top border-start border-end border-bottom p-3" style="background: whitesmoke;">
+                      <div class="form-group mb-2">
+                          <select class="form-select" id="billing-country">
+                            <option value = "" >Country/Region</option>
+                              <option value = "1">Pakistan</option>
+                          </select>
+                      </div>
+                      <div class="row mb-1">
+                          <div class="col-md-6 mb-1">
+                              <input type="text" class="form-control" id="billing-first-name" placeholder="First name">
+                          </div>
+                          <div class="col-md-6">
+                              <input type="text" class="form-control" id="billing-last-name" placeholder="Last name">
+                          </div>
+                      </div>
+                      <div class="form-group mb-1">
+                          <input type="text" class="form-control" id="billing-address" placeholder="Address">
+                      </div>
+                      <div class="form-group mb-1">
+                          <input type="text" class="form-control" id="billing-apartment" placeholder="Apartment, suite, etc.">
+                      </div>
+                      <div class="row mb-1">
+                          <div class="col-md-6 mb-1">
+                              <input type="text" class="form-control" id="billing-city" placeholder="City">
+                          </div>
+                          <div class="col-md-6">
+                              <input type="text" class="form-control" id="billing-postal-code" placeholder="Postal code">
+                          </div>
+                      </div>
+                      <div class="form-group mb-1">
+                          <input type="text" class="form-control" id="billing-phone" placeholder="Phone">
+                      </div>
+                  </div>
+              </div>
+  
+              <button type="button" class="btn  complete-order-btn">Complete order</button>
+              </form>
+
+              <div class="mt-5 border-top text-start pt-3 text-muted">
+                  <a href="#" class="text-decoration-underline text-black " style="font-weight: 300; font-size:smaller;">Refund policy</a>
+                  <span>&nbsp;</span> 
+                  <a href="#" class="text-decoration-underline text-black" style="font-weight: 300;  font-size:smaller;">Terms of service</a>
+              </div>
+          </div>
+      </div>
+      </div>
+    
+    </div>
+    <!-- Left Side -->
+
+
+
+
+  <!-- Right Side -->
+<div class="col-md-5 g-0">
+  <div class="rightside border-bottom border-start">
+      <div class="card" style="background: none; width: 100%; border: 0px solid #F5F5F5 !important;">
+          <div class="logo_icon">
+              <img src="../PICTURES/Aster_Logo_Transparent footer.png" class="img_logo__" style="height: auto; width: 50%;" />
+              <div>
+                  <i class="bi bi-bag"></i>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+
+      <!-- Right Side -->
+
+      
+   <script src="../Scripts/Checkoutform.js" ></script>
+   <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+ 
+   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</body>
+</html>

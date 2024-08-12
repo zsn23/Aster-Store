@@ -1,0 +1,139 @@
+@font-face {
+  font-family:Montserrat;
+  src: url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+}
+
+.returnLOGO{
+    width:  11%;
+    height: 11%;
+}
+.shippingLOGO{
+
+    width:  11%;
+    height: 11%;
+}
+.footer_heading{
+    font-size: 0.9rem;
+    font-weight: 2rem;
+    font-family: Questrial , sans-serif;
+    margin-bottom: 0px !important;
+}
+    
+.Subcribe{
+  font-size: 0.9rem;
+  font-weight: 100;
+}
+.shipLogo{
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+
+
+
+  @media (width:998) {
+    .returnLOGO{
+        width:  10%;
+        height: 10%;
+    }
+    .shippingLOGO{
+    
+        width:  10% !important;
+        height: 10% !important;
+    }
+   
+  }
+  @media (width:864) {
+    .returnLOGO{
+        width:  10% !important;
+        height: 10% !important;
+    }
+    .shippingLOGO{
+    
+        width:  10% !important;
+        height: 10% !important;
+    }
+    
+  
+  }
+/* footer sticker */
+.footer-sticker {
+  background-color: #eed9fd;
+  padding: 20px 0;
+}
+.footer-sticker .footer-item {
+  text-align: center;
+  padding: 10px;
+}
+.footer-sticker .footer-item .icon {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+.footer-sticker .newsletter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer-sticker .newsletter input {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-right: 10px;
+  border-radius: 5px;
+}
+.footer-sticker .newsletter button {
+  padding: 10px 20px;
+  border: none;
+  background-color: #333;
+  color: white;
+  border-radius: 5px;
+}
+/* footer sticker */
+
+
+
+  /* footer center start */
+
+  .footer-menu{
+    padding-left: 0px;
+  }
+  .footer-menu li{
+    font-size: 14px;
+    font-weight: 300;
+    color: #222222;
+    margin-top:7px;
+    margin-bottom: 7px;   
+    text-decoration: none;
+    font-family: 'Montserrat',sans-serif;
+    list-style: none;
+    }
+  .footer-menu li a{
+    text-decoration: none !important;
+    color: #222222 !important;
+  }
+  .social-icons a{
+    text-decoration: none;
+    color: black;
+  }
+
+  .footer-logo{
+    width: 60% !important;
+    height: auto;
+  }
+.footerH5 h5{
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: bold;
+  color: #222222;
+
+}
+@media (max-width:767px) {
+  .InSmallScreens{
+    padding-bottom: 10px !important;
+  }
+  .footer-logo{
+    width: 50% !important;
+    height: auto;
+  }
+}
+  /* foooter  center end */
+  

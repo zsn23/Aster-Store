@@ -1,0 +1,124 @@
+.cart-notification {
+    width: 285px !important;
+    background: #eff0f5;
+    border-radius: 0px 0px 20px 20px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    z-index: 11;
+    
+    border-top: 0px !important;
+    border-bottom: 1px solid lightgray !important;
+    border-left: 1px solid lightgray  !important;
+    border-right: 1px solid lightgray  !important;
+    
+}
+.cartNotificationcontainer{
+    display: flex;
+    justify-content: end;
+}
+
+@media (max-width: 768px) {
+    .cart-notification {
+        width: 100% !important;
+    }
+    .cartNotificationcontainer{
+        display: flex;
+        justify-content: center;
+        position: fixed;
+        z-index: 4;
+    }
+    
+}
+
+.cart-notification img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.cart-notification .btn-checkout  {
+    height: 40px;
+    border-radius: 50px;
+    background-color: #A938FF ;
+    color: white;
+    font-family: 'Questrial', sans-serif !important;
+    font-size: small;
+    letter-spacing: 1px;
+}
+
+.btn_view_cart{
+    border: 0.1rem solid black !important;
+    font-family: 'Questrial', sans-serif !important;
+    font-size: smaller !important;
+    letter-spacing: 1px;
+    height: 40px;
+}
+.cart_icon_counter__{
+    position: absolute;
+    top: 16px;
+    right: 0px;
+    background: rgb(169, 56, 255);
+    color: white;
+    border-radius: 100px;
+    padding: 2px 5px ;
+    font-size: 8px;
+    display: none;
+}
+
+
+.cart-notification .btn-checkout:hover {
+    
+    background-color: #A938FF ;
+    color: white;
+}
+
+
+.cart-notification .btn-continue  {
+    color: #000000 !important;
+    text-decoration: underline;
+    font-family: 'Questrial', sans-serif !important;
+    font-size: smaller;
+}
+.btn-continue:hover{
+    color: #000000 !important;
+}
+
+
+.cart-notification .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.cart-notification.show {
+    display: block;
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.cart-notification .header small {
+    color: #080808;
+    display: flex;
+    align-items: center;
+    font-family: 'Questrial', sans-serif !important;
+}
+
+.cart-notification .header small .bi {
+    margin-right: 5px;
+}
+
+.btn-sm {
+    font-size: smaller !important; 
+    font-weight: lighter !important;
+}
+
+
+.notification_card_title_{
+    margin-top: -4px;
+    margin-bottom: 1.5rem;
+    font-weight: bold;
+    font-size: smaller;
+}
